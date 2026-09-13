@@ -1,5 +1,3 @@
-package LinkedList;
-
 public class LLConstructor {
     private Node head;
     private Node tail;

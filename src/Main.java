@@ -1,5 +1,3 @@
-import LinkedList.LLConstructor;
-
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main
@@ -18,15 +16,15 @@ public class Main
        cons.getTail();
        cons.getLength();
 //       System.out.println("Linked List after deletion");
-//       LinkedList.LLConstructor.Node l=cons.deleteLast();
+//       LLConstructor.Node l=cons.deleteLast();
 //       cons.printList();
 //       cons.getLength();
 //       System.out.println("Deleted Node value is:"+l.value);
-//       LinkedList.LLConstructor.Node q=cons.deleteLast();
+//       LLConstructor.Node q=cons.deleteLast();
 //       cons.printList();
 //       cons.getLength();
 //       System.out.println("Deleted Node value is:"+q.value);
-//       LinkedList.LLConstructor.Node r=cons.deleteLast();
+//       LLConstructor.Node r=cons.deleteLast();
 //       cons.printList();
 //       cons.getLength();
 //       System.out.println("Deleted Node value is:"+r.value);
