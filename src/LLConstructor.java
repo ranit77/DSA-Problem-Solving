@@ -134,4 +134,22 @@ public class LLConstructor {
         }
         return temp;
     }
+    public Boolean set(int index,int value)
+    {
+        Node temp;
+        temp=head;
+        if(index<0 || index>=length)
+        {
+            return false;
+        }
+        else
+        {
+            for(int i=0;i<index;i++)
+            {
+                temp=temp.next;
+            }
+            temp.value=value;
+        }
+        return true;
+    }
 }
