@@ -36,17 +36,23 @@ public class Main
 //       cons.prepend(32);
 //       cons.printList();
 //       cons.getLength();
-       LLConstructor.Node s=cons.removeFirst();
-       cons.printList();
-       cons.getLength();
-       cons.getHead();
-       cons.getTail();
-       System.out.println("Removed from beginning: "+s.value);
-       LLConstructor.Node d=cons.removeFirst();
-       cons.printList();
-       cons.getLength();
-       cons.getHead();
-       cons.getTail();
-       System.out.println("Removed from beginning: "+d.value);
+//       LLConstructor.Node s=cons.removeFirst();
+//       cons.printList();
+//       cons.getLength();
+//       cons.getHead();
+//       cons.getTail();
+//       System.out.println("Removed from beginning: "+s.value);
+//       LLConstructor.Node d=cons.removeFirst();
+//       cons.printList();
+//       cons.getLength();
+//       cons.getHead();
+//       cons.getTail();
+//       System.out.println("Removed from beginning: "+d.value);
+         LLConstructor.Node m=cons.get(2);
+         System.out.println("Value at required index:"+m.value);
+       LLConstructor.Node q=cons.get(4);
+       System.out.println("Value at required index:"+q.value);
+       LLConstructor.Node p=cons.get(0);
+       System.out.println("Value at required index:"+p.value);
    }
 }

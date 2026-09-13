@@ -116,4 +116,22 @@ public class LLConstructor {
         }
         return delFirst;
     }
+    public Node get(int index)
+    {
+        Node temp;
+        temp=head;
+        if(index<0 || index>=length)
+        {
+            return null;
+        }
+        for(int i=0;i<=index;i++)
+        {
+            if(i==index)
+            {
+                break;
+            }
+            temp=temp.next;
+        }
+        return temp;
+    }
 }
