@@ -152,4 +152,31 @@ public class LLConstructor {
         }
         return true;
     }
+    public boolean insert(int index,int value) {
+
+        Node temp = get(index);
+        if(temp==null)
+        {
+            return false;
+        }
+        Node aft = temp.next;
+        if (index == 0) {
+            prepend(value);
+            return true;
+        } else if (index == length) {
+            append(value);
+            return true;
+        }
+        else {
+            if (temp != null)
+            {
+                Node nz = new Node(value);
+                temp.next = nz;
+                nz.next = aft;
+                length++;
+                return true;
+            }
+        }
+        return false;
+    }
 }

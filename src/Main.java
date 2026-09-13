@@ -55,10 +55,26 @@ public class Main
        LLConstructor.Node p=cons.get(0);
        System.out.println("Value at required index:"+p.value);
        Boolean z=cons.set(2,38);
-       System.out.println("Is the operation succesful? "+s);
+       System.out.println("Is the operation succesful? "+z);
        cons.printList();
        Boolean t=cons.set(4,46);
        System.out.println("Is the operation succesful? "+t);
        cons.printList();
+       boolean x=cons.insert(2,79);
+       System.out.println("Is the operation succesful? "+x);
+       cons.printList();
+       cons.getLength();
+       boolean b=cons.insert(0,93);
+       System.out.println("Is the operation succesful? "+b);
+       cons.printList();
+       cons.getLength();
+       boolean c=cons.insert(7,93);
+       System.out.println("Is the operation succesful? "+c);
+       cons.printList();
+       cons.getLength();
+       boolean y=cons.insert(-1,50);
+       System.out.println("Is the operation succesful? "+y);
+       cons.printList();
+       cons.getLength();
    }
 }
