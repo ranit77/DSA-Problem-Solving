@@ -77,7 +77,7 @@ public class Main
        cons.printList();
        cons.getLength();
        LLConstructor.Node n=cons.delete(0);
-       System.out.println("Value deleteted is: "+r.value);
+       System.out.println("Value deleteted is: "+n.value);
        cons.printList();
        cons.getLength();
        LLConstructor.Node k=cons.delete(3);
