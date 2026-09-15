@@ -84,5 +84,10 @@ public class Main
        System.out.println("Value deleteted is: "+k.value);
        cons.printList();
        cons.getLength();
+       cons.reverse();
+       cons.printList();
+       cons.getLength();
+       cons.getHead();
+       cons.getTail();
    }
 }

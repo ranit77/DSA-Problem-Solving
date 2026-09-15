@@ -210,4 +210,20 @@ public class LLConstructor {
         }
         return temp;
     }
+    public void reverse()
+    {
+        Node temp,after,before;
+        temp=head;
+        head=tail;
+        tail=temp;
+        after=temp.next;
+        before=null;
+            for(int j=0;j<length;j++)
+            {
+                after=temp.next;
+                temp.next=before;
+                before=temp;
+                temp=after;
+            }
+    }
 }
