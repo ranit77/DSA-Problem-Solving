@@ -179,4 +179,35 @@ public class LLConstructor {
         }
         return false;
     }
+    public Node delete(int index)
+    {
+        Node temp=get(index);
+        if(index==0 && length!=0)
+        {
+            if(length==1)
+            {
+                head=null;
+                tail=null;
+                length--;
+                return temp;
+            }
+            else
+            {
+                length--;
+                head=head.next;
+                return temp;
+            }
+        }
+        Node pre=get(index-1);
+        if(temp==null)
+        {
+            return null;
+        }
+        else if(length>1)
+        {
+            pre.next=temp.next;
+            length--;
+        }
+        return temp;
+    }
 }

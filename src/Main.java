@@ -76,5 +76,13 @@ public class Main
        System.out.println("Is the operation succesful? "+y);
        cons.printList();
        cons.getLength();
+       LLConstructor.Node n=cons.delete(0);
+       System.out.println("Value deleteted is: "+r.value);
+       cons.printList();
+       cons.getLength();
+       LLConstructor.Node k=cons.delete(3);
+       System.out.println("Value deleteted is: "+k.value);
+       cons.printList();
+       cons.getLength();
    }
 }
