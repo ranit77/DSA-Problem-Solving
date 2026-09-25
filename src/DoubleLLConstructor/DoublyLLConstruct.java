@@ -56,7 +56,6 @@ public class DoublyLLConstruct
         else
         {
             np.prev=tail;
-            np.next=null;
             tail.next=np;
             tail=np;
             length++;
