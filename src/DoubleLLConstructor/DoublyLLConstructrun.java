@@ -12,16 +12,16 @@ public class DoublyLLConstructrun
         n.getHead();
         n.getTail();
         n.getLength();
-//        DoublyLLConstruct.Node p=n.removeLast();
-//        n.printListhere();
-//        System.out.println("Deleted element: "+p.value);
-//        n.getTail();
-//        n.getLength();
-//        DoublyLLConstruct.Node r=n.removeLast();
-//        n.printListhere();
-//        System.out.println("Deleted element: "+r.value);
-//        n.getLength();
-//        n.getTail();
+        DoublyLLConstruct.Node p=n.removeLast();
+        n.printListhere();
+        System.out.println("Deleted element: "+p.value);
+        n.getTail();
+        n.getLength();
+        DoublyLLConstruct.Node r=n.removeLast();
+        n.printListhere();
+        System.out.println("Deleted element: "+r.value);
+        n.getLength();
+        n.getTail();
         n.prepend(89);
         n.prepend(66);
         n.prepend(45);
@@ -29,5 +29,15 @@ public class DoublyLLConstructrun
         n.getLength();
         n.getTail();
         n.getHead();
+          DoublyLLConstruct.Node t=n.removeFirst();
+          n.printListhere();
+          System.out.println("Deleted element: "+t.value);
+          n.getHead();
+          n.getLength();
+          DoublyLLConstruct.Node u=n.removeFirst();
+          n.printListhere();
+          System.out.println("Deleted element: "+u.value);
+          n.getHead();
+          n.getLength();
     }
 }

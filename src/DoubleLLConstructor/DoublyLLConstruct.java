@@ -100,4 +100,27 @@ public class DoublyLLConstruct
         }
         length++;
     }
+    public Node removeFirst()
+    {
+        Node temp;
+        if(length==0)
+        {
+            return null;
+        }
+        else if(length==1)
+        {
+            temp=head;
+            head=null;
+            tail=null;
+        }
+        else
+        {
+            temp=head;
+            head=head.next;
+            temp.next=null;
+            head.prev=null;
+        }
+        length--;
+        return temp;
+    }
 }
