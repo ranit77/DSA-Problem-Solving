@@ -61,4 +61,28 @@ public class DoublyLLConstruct
             length++;
         }
     }
+    public Node removeLast()
+    {
+        Node temp=null;
+        if(length==0)
+        {
+            return null;
+        }
+        else if(length==1)
+        {
+            temp=tail;
+            head=null;
+            tail=null;
+            length--;
+            return temp;
+        }
+        else
+        {
+            temp=tail;
+            tail=tail.prev;
+            tail.next=null;
+            length--;
+        }
+        return temp;
+    }
 }
