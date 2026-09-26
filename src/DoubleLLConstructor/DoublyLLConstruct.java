@@ -85,4 +85,19 @@ public class DoublyLLConstruct
         }
         return temp;
     }
+    public void prepend(int value)
+    {
+        Node np=new Node(value);
+        if(length==0)
+        {
+            head=np;
+            tail=np;
+        }
+        else
+        {
+            np.next=head;
+            head=np;
+        }
+        length++;
+    }
 }
