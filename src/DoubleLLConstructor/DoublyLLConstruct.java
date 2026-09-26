@@ -123,4 +123,50 @@ public class DoublyLLConstruct
         length--;
         return temp;
     }
+    public Node getA(int index)
+    {
+        Node temp;
+        if(index<0 || index>=length)
+        {
+            return null;
+        }
+        else
+        {
+           temp=head;
+           for(int i=0;i<index;i++)
+           {
+               temp=temp.next;
+           }
+        }
+        return temp;
+    }
+    public Node get(int index)
+    {
+        Node temp;
+        if(index<0 || index>=length)
+        {
+            return null;
+        }
+        else
+        {
+
+           if(index<length/2)
+           {
+               temp=head;
+               for(int i=0;i<index;i++)
+               {
+                    temp=temp.next;
+                }
+           }
+           else
+           {
+               temp=tail;
+               for(int z=length-1;z>index;z--)
+               {
+                   temp=temp.prev;
+               }
+           }
+        }
+        return temp;
+    }
 }

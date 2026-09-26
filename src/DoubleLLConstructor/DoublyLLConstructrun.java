@@ -39,5 +39,9 @@ public class DoublyLLConstructrun
           System.out.println("Deleted element: "+u.value);
           n.getHead();
           n.getLength();
+        DoublyLLConstruct.Node a=n.get(0);
+        System.out.println("Value is:"+a.value);
+        DoublyLLConstruct.Node b=n.getA(3);
+        System.out.println("Value is:"+b.value);
     }
 }
