@@ -209,4 +209,36 @@ public class DoublyLLConstruct
             return true;
         }
     }
+    public Node remove(int index)
+    {
+        if(index<0 || index>=length)
+        {
+            return null;
+        }
+        else if(index==0)
+        {
+            Node rf=removeFirst();
+            return rf;
+        }
+        else if(index==(length-1))
+        {
+            Node rl=removeLast();
+            return rl;
+        }
+        else
+        {
+            Node pre=get(index-1);
+            Node temp=pre.next;
+            Node aft=temp.next;
+
+            pre.next=aft;
+            aft.prev=pre;
+
+            temp.next=null;
+            temp.prev=null;
+
+            length--;
+            return temp;
+        }
+    }
 }

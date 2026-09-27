@@ -55,5 +55,14 @@ public class DoublyLLConstructrun
         n.getHead();
         n.getTail();
         n.getLength();
+        DoublyLLConstruct.Node z=n.remove(3);
+        n.printListhere();
+        System.out.println("Removed node value is:"+z.value);
+        DoublyLLConstruct.Node x=n.remove(0);
+        n.printListhere();
+        System.out.println("Removed node value is:"+x.value);
+        n.getHead();
+        n.getTail();
+        n.getLength();
     }
 }
