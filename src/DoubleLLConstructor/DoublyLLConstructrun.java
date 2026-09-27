@@ -43,5 +43,11 @@ public class DoublyLLConstructrun
         System.out.println("Value is:"+a.value);
         DoublyLLConstruct.Node b=n.getA(3);
         System.out.println("Value is:"+b.value);
+        System.out.println("Is it succesful?:"+n.set(2,98));
+        System.out.println("Is it succesful?:"+n.set(0,56));
+        n.printListhere();
+        n.getTail();
+        n.getHead();
+        n.getLength();
     }
 }
