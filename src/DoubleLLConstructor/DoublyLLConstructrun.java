@@ -43,11 +43,17 @@ public class DoublyLLConstructrun
         System.out.println("Value is:"+a.value);
         DoublyLLConstruct.Node b=n.getA(3);
         System.out.println("Value is:"+b.value);
-        System.out.println("Is it succesful?:"+n.set(2,98));
-        System.out.println("Is it succesful?:"+n.set(0,56));
+        System.out.println("Is it successful?:"+n.set(2,98));
+        System.out.println("Is it successful?:"+n.set(0,56));
         n.printListhere();
         n.getTail();
         n.getHead();
+        n.getLength();
+        System.out.println("Is success??"+n.insert(9,100)); //false -->Out of index range
+        System.out.println("Is success??"+n.insert(0,1000));
+        n.printListhere();
+        n.getHead();
+        n.getTail();
         n.getLength();
     }
 }

@@ -179,4 +179,34 @@ public class DoublyLLConstruct
         }
         return false;
     }
+    public boolean insert(int index, int value)
+    {
+        if(index==0)
+        {
+            prepend(value);
+            return true;
+        }
+        else if(index==(length-1))
+        {
+            append(value);
+            return true;
+        }
+        else
+        {
+            Node na=new Node(value);
+            Node temp=get(index);
+            Node pre=get(index-1);
+            if(temp==null)
+            {
+                return false;
+            }
+            pre.next=na;
+            na.next=temp;
+
+            temp.prev=na;
+            na.prev=pre;
+            length++;
+            return true;
+        }
+    }
 }
